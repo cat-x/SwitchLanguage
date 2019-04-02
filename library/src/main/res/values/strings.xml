@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="korean" translatable="false">한글</string>
+    <string name="fan_ti_zhong_wen" translatable="false">繁体中文</string>
+    <string name="english" translatable="false">English</string>
+    <string name="ri_ben_yu" translatable="false">日本語</string>
+    <string name="jian_ti_zhong_wen" translatable="false">简体中文</string>
+</resources>

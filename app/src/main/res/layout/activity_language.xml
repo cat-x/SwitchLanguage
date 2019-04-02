@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        tools:context=".LanguageActivity">
+
+    <ImageView
+            android:padding="4dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/icon_back_button"
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_toRightOf="@id/backButton"
+            android:layout_alignBottom="@id/backButton"
+            android:layout_alignTop="@id/backButton"
+            android:gravity="center"
+            android:id="@+id/titleTextView"
+            android:text="@string/language"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <xyz.a1api.language.LanguageView
+            android:layout_below="@id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </xyz.a1api.language.LanguageView>
+
+</RelativeLayout>

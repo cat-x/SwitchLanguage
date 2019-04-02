@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwitchLanguage</string>
+    <string name="hello">你好，世界！</string>
+    <string name="language">語言</string>
+</resources>

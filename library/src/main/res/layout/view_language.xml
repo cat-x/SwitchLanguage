@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:background="@android:color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dip">
+
+        <TextView
+                android:id="@+id/englishText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/english"
+                android:textSize="13sp"
+                android:textColor="#071837"/>
+
+        <ImageView
+                android:id="@+id/checkEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_language"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/color_main_item_gray"/>
+
+    <RelativeLayout
+            android:id="@+id/simplifiedChinese"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dip">
+
+        <TextView
+                android:id="@+id/simplifiedChineseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/jian_ti_zhong_wen"
+                android:textSize="13sp"
+                android:textColor="#071837"/>
+
+        <ImageView
+                android:id="@+id/checkSimplifiedChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_language"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/color_main_item_gray"/>
+
+    <RelativeLayout
+            android:id="@+id/traditionalChinese"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dip">
+
+        <TextView
+                android:id="@+id/traditionalChineseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/fan_ti_zhong_wen"
+                android:textSize="13sp"
+                android:textColor="#071837"/>
+
+        <ImageView
+                android:id="@+id/checkTraditionalChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_language"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/color_main_item_gray"/>
+
+
+    <RelativeLayout
+            android:id="@+id/korean"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dip">
+
+        <TextView
+                android:id="@+id/koreanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dp"
+                android:text="@string/korean"
+                android:textSize="13sp"
+                android:textColor="#071837"/>
+
+        <ImageView
+                android:id="@+id/checkKorean"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_language"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/color_main_item_gray"/>
+
+    <RelativeLayout
+            android:id="@+id/japanese"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dip">
+
+        <TextView
+                android:id="@+id/japaneseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dp"
+                android:text="@string/ri_ben_yu"
+                android:textSize="13sp"
+                android:textColor="#071837"/>
+
+        <ImageView
+                android:id="@+id/checkJapanese"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/select_language"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/color_main_item_gray"/>
+
+
+</LinearLayout>
+
+

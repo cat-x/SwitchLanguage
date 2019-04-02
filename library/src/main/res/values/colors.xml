@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_main_item_gray">#f0f1f2</color><!--所有主窗口的深色背景颜色ffeeeeee-->
+    <color name="black_white">#FFffffff</color> <!--所有主窗口栏目的背景颜色-->
+    <color name="color_light_green">#65e8b7</color>
+</resources>
