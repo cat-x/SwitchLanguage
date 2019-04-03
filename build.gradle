@@ -3,9 +3,9 @@
 buildscript {
     ext.kotlin_version = '1.3.21'
     ext.support_version = '28.0.0'
-    ext.version = '0.22'
-    ext.PUBLISH_GROUP_ID = 'me.eugeniomarletti'
-    ext.PUBLISH_ARTIFACT_ID = 'android-extras-delegates'
+    ext.version = '0.23'
+    ext.PUBLISH_GROUP_ID = 'com.github.cat-x'
+    ext.PUBLISH_ARTIFACT_ID = 'switch-language'
     repositories {
         google()
         jcenter()

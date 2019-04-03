@@ -23,7 +23,7 @@ allprojects {
 In your Application Dir `build.gradle`:
 ```groovy
 dependencies {
-    implementation 'com.github.cat-x:SwitchLanguage:0.22'
+    implementation 'com.github.cat-x:SwitchLanguage:0.23'
     implementation 'com.github.cat-x:LStorage:0.10'
 }
 ```
