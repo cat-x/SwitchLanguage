@@ -4,8 +4,8 @@ import android.app.Application
 import xyz.a1api.language.LanguageInject
 
 /**
- * Created by Cat-x on 2019/1/4.
- * For ZQeducation2
+ * Created by Cat-x on 2019/4/1.
+ * For SwitchLanguage
  * Cat-x All Rights Reserved
  */
 open class App : Application() {
