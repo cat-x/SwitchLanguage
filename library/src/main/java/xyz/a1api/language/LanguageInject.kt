@@ -3,6 +3,7 @@ package xyz.a1api.language
 import android.app.Activity
 import android.app.Application
 import android.content.Context
+import xyz.a1api.tools.LStorage
 import java.util.*
 
 /**
@@ -28,6 +29,9 @@ open class LanguageInject(open val activity: Activity) {
         }
     }
 
+    /**
+     * 判断当前Activity是不是语言切换的页面，如果是，需要返回true
+     */
     open fun isLanguageActivity(activity: Activity): Boolean {
         return false
     }

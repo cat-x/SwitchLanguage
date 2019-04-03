@@ -6,6 +6,7 @@ import android.content.Context
 import android.os.Build
 import android.os.LocaleList
 import android.support.v7.app.AppCompatActivity
+import xyz.a1api.tools.LStorage
 import java.util.*
 
 
@@ -23,6 +24,9 @@ open class BaseLanguageActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * 判断当前Activity是不是语言切换的页面，如果是，需要返回true
+     */
     open fun isLanguageActivity(activity: Activity): Boolean {
         return false
     }
@@ -75,6 +79,9 @@ open class BaseLanguageActivity : AppCompatActivity() {
         const val LANGUAGE = "language"
         const val COUNTRY = "country"
 
+        /**
+         * 获取当前App语言，用于网络api调用，会返回“语言-国家”的形式;如果没有国家，则直接返回“语言”
+         */
         fun getSelectLanguageForWeb(context: Context, isUseIOS: Boolean = false): String? {
             val language = getSelectLanguage(context, false)
             return if (language?.country.isNullOrEmpty()) language?.language else {
@@ -91,6 +98,9 @@ open class BaseLanguageActivity : AppCompatActivity() {
             }
         }
 
+        /**
+         * 获取当前App语言的Locale
+         */
         fun getSelectLanguage(newBase: Context?, canNull: Boolean = false): Locale? {
             if (newBase == null) {
                 return null
@@ -113,12 +123,18 @@ open class BaseLanguageActivity : AppCompatActivity() {
             return Locale(language, country)
         }
 
+        /**
+         * 设置语言
+         */
         fun setSelectLanguage(locale: Locale, newBase: Context) {
             LStorage.SP.putString(LANGUAGE, locale.language)
             LStorage.SP.putString(COUNTRY, locale.country)
 //            this.locale = locale
         }
 
+        /**
+         * 载入选中语言的resources
+         */
         fun loadLanguage(locale: Locale?, newBase: Context?): Context? {
             if (locale != null && newBase != null) {
                 val resources = newBase.resources

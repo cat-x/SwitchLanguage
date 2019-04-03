@@ -28,6 +28,8 @@
             android:layout_height="wrap_content"/>
 
     <xyz.a1api.language.LanguageView
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:layout_below="@id/titleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
