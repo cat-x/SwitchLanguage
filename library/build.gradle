@@ -11,6 +11,9 @@ android {
     compileSdkVersion 28
 
 
+    compileOptions {
+        kotlinOptions.freeCompilerArgs += ['-module-name', "$PUBLISH_GROUP_ID.$PUBLISH_ARTIFACT_ID"]
+    }
 
     defaultConfig {
         minSdkVersion 16

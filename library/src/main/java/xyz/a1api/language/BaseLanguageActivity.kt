@@ -123,6 +123,9 @@ open class BaseLanguageActivity : AppCompatActivity() {
             return Locale(language, country)
         }
 
+        @JvmName("getSelectLanguage2")
+        fun Context.getSelectLanguage(canNull: Boolean = false) = getSelectLanguage(this, canNull)
+
         /**
          * 设置语言
          */
@@ -156,6 +159,8 @@ open class BaseLanguageActivity : AppCompatActivity() {
             }
             return newBase
         }
+
+        fun Context?.loadLanguage(locale: Locale?): Context? = loadLanguage(locale, this)
 
 //        fun isSameWithSetting(context: Context): Boolean {
 //            val current = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

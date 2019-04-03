@@ -29,20 +29,6 @@ dependencies {
 ```
 
 ------
-
-> library 库使用API 28编译，所以低于一下版本可能出现错误
-
- 例如你使用的是API 27，你可以在在build.gradle中添加一下来解决错误
-~~~groovy
-configurations.all {
-    resolutionStrategy {
-        force "com.android.support:appcompat-v7:27.1.1"
-        force "com.android.support:support-v4:27.1.1"
-    }
- ~~~
-[Android Studio：resource android:attr/dialogCornerRadius not found 出错解决方案](https://blog.csdn.net/weixin_43465451/article/details/83185112)
-
-------
 ### 使用方法
 1. 在使用前你应该进行初始化
 > 你需要在Application 中初始化，只需要调用1次即可
